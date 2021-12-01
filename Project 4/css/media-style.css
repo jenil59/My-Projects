@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    #main {
+        padding-bottom: 4rem;
+    }
+    #main .owl-dots {
+        display: none;
+    }
+    #main .slide {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    }
+    #main .slide .content {
+        padding: 1rem;
+    }
+    #main .slide .image img {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #review .heading {
+        padding-top: 10rem;
+    }
+    #review .box-container .review-slider .box {
+        position: relative;
+        height: 45vh;
+    }
+    #review .box-container .review-slider .box .image {
+        position: absolute;
+        top: 0;
+        margin: 0;
+    }
+    #review .box-container .review-slider .box .image img {
+        border-radius: 5rem;
+    }
+    #review .box-container .review-slider .box .comment {
+        border-radius: 1rem;
+        text-align: center;
+        width: 35rem;
+    }
+    #review .box-container .review-slider .box .comment h3 {
+        text-align: center;
+        margin-top: -2rem;
+    }
+}

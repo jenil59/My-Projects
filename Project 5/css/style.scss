@@ -1,0 +1,106 @@
+#header {
+    background-color: black;
+    height: 12vh;
+    .header-col-1 {
+        position: relative;
+        .logo-name {
+            margin-top: 10px;
+            color: aliceblue;
+            font-size: 3rem;
+        }
+    }
+    .header-col-2 {
+        nav {
+            margin-top: auto;
+            .navbar {
+                float: right;
+                margin-top: 1rem;
+                ul {
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        margin-right: 20px;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#poster {
+    background: url(../images/sky-5375005_1920.jpg);
+    background-position: center;
+    .poster-container {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        color: aliceblue;
+        h1 {
+            text-align: center;
+            line-height: 40vh;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            position: absolute;
+            top: 65%;
+            left: 26%;
+        }
+    }
+}
+
+.s-b {
+    height: 10vh;
+    .pannle {
+        color: white;
+        background: rgb(54, 54, 54);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            margin-left: 5rem;
+        }
+        .input {
+            margin-right: 10rem;
+        }
+    }
+}
+
+#tasks {
+    .row {
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+        .col-4 {
+            width: 20vw;
+        }
+    }
+    .box {
+        display: flex;
+        flex-flow: column;
+        background: #eee;
+        position: relative;
+        .image {
+            width: 80%;
+            height: 25%;
+            img {
+                width: 50%;
+                margin-top: 10%;
+                margin-left: 38%;
+            }
+        }
+        .title {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    padding: 17px 0px;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 2;
+}
+
+header {
+    line-height: 50px;
+}
+
+.logo span {
+    font-size: 16px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    padding-left: 63px;
+}
+
+#p1 {
+    position: absolute;
+    top: -2px;
+    letter-spacing: 0.025em;
+}
+
+#p2 {
+    position: absolute;
+    top: 15px;
+}
+
+#p3 {
+    position: absolute;
+    top: 32px;
+}
+
+.carousel-item {
+    color: black;
+}
+
+.first-sec {
+    margin-top: 13px;
+    height: 450px;
+    border: 1px solid red;
+}
+
+.c-img img {
+    width: 100%;
+    height: 450px;
+    background-position: center;
+}
+
+.c-img {
+    background-color: aqua;
+    z-index: 10;
+}
+
+.marginset {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100%;
+    background-color: transparent !important;
+    margin-right: 10px !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+    border: 2px solid #fff;
+}
+
+.carousel-indicators .active {
+    background: white !important;
+}

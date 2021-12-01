@@ -1,0 +1,111 @@
+.searchbar form {
+    position: relative;
+}
+
+.searchbar * {
+    box-sizing: border-box;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 50px;
+    top: 16px;
+    right: 9px;
+    margin-top: 8px;
+}
+
+.search-input {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    color: #eee;
+    transition: width 0.5s;
+    transition-delay: 10ms;
+}
+
+.btn-search {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 42px;
+    right: 6px;
+    outline: 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.btn-search::after,
+.btn-search::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 17px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.btn-search::before {
+    transform: rotate(-45deg);
+    bottom: -15px;
+    right: -7px;
+}
+
+.btn-search::after {
+    transform: rotate(45deg);
+    opacity: 0;
+    right: 10.50px;
+    bottom: 5px;
+}
+
+.search-input.open {
+    width: 230px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.btn-search.clicked::before {
+    bottom: 5px;
+    right: 10px;
+}
+
+.btn-search.btn-search.clicked::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width:1100px) {
+    .searchbar {
+        right: 100px;
+    }
+    .sb {
+        margin-bottom: 5px;
+    }
+    .btn-search.clicked::before {
+        bottom: 5px;
+        right: 100px;
+    }
+    .btn-search::after {
+        transform: rotate(45deg);
+        opacity: 0;
+        right: 100.50px;
+        bottom: 5px;
+    }
+    .btn-search::before {
+        transform: rotate(-45deg);
+        bottom: -10px;
+        right: 82px;
+    }
+    .btn-search {
+        right: 15px;
+        border: 1px solid #fff;
+    }
+}
